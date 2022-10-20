@@ -1,0 +1,1 @@
+alias asset='echo | ls | grep "maine coon" | tr "." " "'
