@@ -7,6 +7,6 @@ def incrementFile():
     currentVersion = int(version)
     newVersion = str(currentVesion + 1)
     
-    newFile = ".".join([asset, task, artist, version, ext])
+    newFile = join([asset, task, artist, version, ext])
     maya.cmds.file(rename=newFile)
-    print(f"Saving to: \'{maya.cmds.file(save=True, type='mayaAscii')}\'")
+    print("Saving to: \'{maya.cmds.file(save=True, type='mayaAscii')}\'")
